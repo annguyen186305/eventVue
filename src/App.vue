@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <Count></Count>
+<!--    <label>Nhap C:</label>-->
+<!--    <input type="number" name="C" v-model="c">-->
+    <Count :nhapC="Number (c) "></Count>
   </div>
 </template>
 
@@ -13,6 +15,11 @@ export default {
   name: 'App',
   components: {
     Count,
+  },
+  data(){
+    return{
+      c:0,
+    }
   }
 }
 </script>
